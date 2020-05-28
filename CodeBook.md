@@ -261,7 +261,7 @@ names(tidyset) <- gsub("angle", "Angle", names(tidyset))
 names(tidyset) <- gsub("\\(t", "(Time", names(tidyset))
 names(tidyset) <- gsub("\\),|,", "_", names(tidyset))
 ```
-8. Group the table 'tidyset' by 'subject' then by 'activity' with `group_by()` and calculate the mean for each 'activity' for each 'subject' using `summarise_all()`: 
+8. Group the table 'tidyset' first by 'activity' then by 'subject' (as instructed in the project notes) with `group_by()` and calculate the mean for each 'activity' for each 'subject' using `summarise_all()`: 
 
 ```{r}
 tidysetMeans <- tidyset %>% group_by(subject, activity) %>% summarise_all(list(mean))
