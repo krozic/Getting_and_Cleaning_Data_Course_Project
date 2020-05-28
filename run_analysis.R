@@ -5,7 +5,7 @@ library(dplyr)
 if(!file.exists("./data")){dir.create("./data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 if(!file.exists("./data/UCI_HAR.zip")){download.file(fileUrl, "./data/UCI_HAR.zip", method = "curl")}
-if(!file.exists("./UCI HAR Dataset/")){unzip("./data/UCI_HAR.zip", "./UCI HAR Dataset/")}
+if(!file.exists("./UCI HAR Dataset/")){unzip("./data/UCI_HAR.zip", exdir = ".")}
 
 #read in all the files
 testX <- read.table("./UCI HAR Dataset/test/X_test.txt")
@@ -61,4 +61,4 @@ names(tidyset) <- gsub("\\),|,", "_", names(tidyset))
 
 #make final dataset
 tidysetMeans <- tidyset %>% group_by(subject, activity) %>% summarise_all(list(mean))
-write.table(tidysetMeans, "tidysetMeans.txt", row.name = FALSE)
+write.table(tidysetMeans, "FinalDataset.txt", row.name = FALSE)
