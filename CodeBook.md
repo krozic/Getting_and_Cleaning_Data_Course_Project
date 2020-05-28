@@ -23,14 +23,14 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ***
 
 - 'data/UCI_HAR.zip': Contains the files required to build the tidy data and final data set.
-- 'test/X_test.txt': Table of gyroscope and observation values for test data. Each row provides sensor values corresponding to a 'subject' performing a single 'activity'.
-- 'test/y_test.txt': Activity numbers to go with the 'X_test.txt' table.
-- 'test/subject_test.txt': Subject number labels to go with the 'X_Test.txt' table.
-- 'train/X_train.txt': Table of gyroscope and observation values for training data. Each row provides sensor values corresponding to a 'subject' performing a single 'activity'.
-- 'train/y_train.txt': Activity numbers to go with the 'X_train.txt' table.
-- 'train/subject_train.txt': Subject number labels to go with the 'X_train.txt' table.
-- 'features.txt': A table containing the variable names for every sensor value obtained.
-- 'activity_labels.txt': Descriptive titles for the activities that subjects were asked to perform.
+- 'test/X_test.txt': Table of gyroscope and observation values for test data. Each row provides sensor values corresponding to a 'subject' performing a single 'activity'. (2947 rows, 561 columns)
+- 'test/y_test.txt': Activity numbers to go with the 'X_test.txt' table. (2947 rows, 1 column)
+- 'test/subject_test.txt': Subject number labels to go with the 'X_Test.txt' table. (2947 rows, 1 column)
+- 'train/X_train.txt': Table of gyroscope and observation values for training data. Each row provides sensor values corresponding to a 'subject' performing a single 'activity'. (7352 rows, 561 columns)
+- 'train/y_train.txt': Activity numbers to go with the 'X_train.txt' table. (7352 rows, 1 column)
+- 'train/subject_train.txt': Subject number labels to go with the 'X_train.txt' table. (7352 rows, 1 column)
+- 'features.txt': A table containing the variable names for every sensor value obtained. (561 rows, 2 columns)
+- 'activity_labels.txt': Descriptive titles for the activities that subjects were asked to perform. (6 rows, 2 columns)
 
 ### **Included Variables**
 
