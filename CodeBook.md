@@ -47,7 +47,7 @@ The features selected for this database come from the accelerometer and gyroscop
 *The acceleration signal was separated into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.*
 
 - TimeBodyAccelerometer...-XYZ 
-- TiemGravityAccelerometer...-XYZ
+- TimeGravityAccelerometer...-XYZ
 
 #### "Jerk" Signals:
 

@@ -33,4 +33,4 @@
 - [X] Appropriately labels the data set with descriptive variable names.
 - [X] Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-[^1]:*All work described herein has been completed by Kyle Rozic.*
+[^1]: *All work described herein has been completed by Kyle Rozic.*
