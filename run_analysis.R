@@ -60,5 +60,5 @@ names(tidyset) <- gsub("\\(t", "(Time", names(tidyset))
 names(tidyset) <- gsub("\\),|,", "_", names(tidyset))
 
 #make final dataset
-tidysetMeans <- tidyset %>% group_by(subject, activity) %>% summarise_all(list(mean))
+tidysetMeans <- tidyset %>% group_by(activity, subject) %>% summarise_all(list(mean))
 write.table(tidysetMeans, "FinalDataset.txt", row.name = FALSE)
